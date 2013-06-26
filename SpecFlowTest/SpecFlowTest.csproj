@@ -55,6 +55,7 @@
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
     </Compile>
+    <Compile Include="ApiFiles\ApiTestingSteps.cs" />
     <Compile Include="PlusOneFiles\Adding1Steps.cs" />
     <Compile Include="MainWindow.cs">
       <SubType>Form</SubType>
