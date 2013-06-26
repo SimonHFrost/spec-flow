@@ -51,9 +51,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ApiFiles\ApiTesting.feature.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
       <DependentUpon>ApiTesting.feature</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
     </Compile>
     <Compile Include="PlusOneFiles\Adding1Steps.cs" />
     <Compile Include="MainWindow.cs">
