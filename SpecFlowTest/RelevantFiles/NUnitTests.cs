@@ -13,7 +13,7 @@ namespace SpecFlowTest
         [Test]
         public void TestGoodButton()
         {
-            Form1 form = new Form1();
+            MainWindow form = new MainWindow();
             
             form.textBox1.Text = "0";
             Assert.AreEqual("0", form.textBox1.Text);
@@ -25,7 +25,7 @@ namespace SpecFlowTest
         [Test]
         public void TestFaultyButton()
         {
-            Form1 form = new Form1();
+            MainWindow form = new MainWindow();
 
             form.textBox1.Text = "0";
             Assert.AreEqual("0", form.textBox1.Text);
@@ -37,7 +37,7 @@ namespace SpecFlowTest
         [Test]
         public void TestArbitraryStart()
         {
-            Form1 form = new Form1();
+            MainWindow form = new MainWindow();
 
             form.textBox1.Text = "8008135";
 
@@ -48,7 +48,7 @@ namespace SpecFlowTest
         [Test]
         public void TestMultipleClicks()
         {
-            Form1 form = new Form1();
+            MainWindow form = new MainWindow();
 
             form.textBox1.Text = "0";
 

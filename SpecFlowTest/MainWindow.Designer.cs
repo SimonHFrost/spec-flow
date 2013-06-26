@@ -1,6 +1,6 @@
 ﻿namespace SpecFlowTest
 {
-    partial class Form1
+    partial class MainWindow
     {
         /// <summary>
         /// Required designer variable.
@@ -73,9 +73,11 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.faultyButton);
             this.Controls.Add(this.goodButton);
+            this.MaximumSize = new System.Drawing.Size(260, 194);
+            this.MinimumSize = new System.Drawing.Size(260, 194);
             this.Name = "Form1";
             this.Text = "Plus One";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.Load += new System.EventHandler(this.MainWindow_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

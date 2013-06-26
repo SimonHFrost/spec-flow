@@ -7,25 +7,40 @@ namespace SpecFlowTest
     [Binding]
     public class Adding1ToNumbersSteps
     {
-        private Form1 form = new Form1();
+        private MainWindow mainWindow = new MainWindow();
 
         [Given(@"I have entered (.*) into the textbox")]
         public void GivenIHaveEnteredIntoTheTextbox(int p0)
         {
-            form.textBox1.Text = p0.ToString();
+            mainWindow.textBox1.Text = p0.ToString();
         }
         
         [When(@"I press the good button")]
         public void WhenIPressTheGoodButton()
         {
-            form.button1_Click(null, null);
+            mainWindow.button1_Click(null, null);
+        }
+
+        [When(@"I press the good button (.*) times")]
+        public void WhenIPressTheGoodButtonTimes(int times)
+        {
+            for (int i = 0; i < times; i++)
+            {
+                mainWindow.button1_Click(null, null);
+            }
         }
         
-        [Then(@"the result should be (.*) on the screen")]
-        public void ThenTheResultShouldBeOnTheScreen(int p0)
+        [When(@"I press the faulty button")]
+        public void WhenIPressTheFaultyButton()
         {
-            string value = form.textBox1.Text;
-            Assert.AreEqual(p0, value);
+            mainWindow.button2_Click(null, null);
+        }
+        
+        [Then(@"the result should be (.*)")]
+        public void ThenTheResultShouldBe(int result)
+        {
+            string value = mainWindow.textBox1.Text;
+            Assert.AreEqual(result, value);
         }
     }
 }
