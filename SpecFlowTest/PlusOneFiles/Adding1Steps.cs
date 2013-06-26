@@ -40,7 +40,7 @@ namespace SpecFlowTest
         public void ThenTheResultShouldBe(int result)
         {
             string value = mainWindow.textBox1.Text;
-            Assert.AreEqual(result, value);
+            Assert.AreEqual(result.ToString(), value);
         }
     }
 }

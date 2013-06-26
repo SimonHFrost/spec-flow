@@ -11,7 +11,7 @@
 // ------------------------------------------------------------------------------
 #region Designer generated code
 #pragma warning disable
-namespace SpecFlowTest.RelevantFiles
+namespace SpecFlowTest.PlusOneFiles
 {
     using TechTalk.SpecFlow;
     
@@ -25,14 +25,14 @@ namespace SpecFlowTest.RelevantFiles
         
         private static TechTalk.SpecFlow.ITestRunner testRunner;
         
-#line 1 "SpecFlowFeature1.feature"
+#line 1 "Adding1.feature"
 #line hidden
         
         [NUnit.Framework.TestFixtureSetUpAttribute()]
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Adding 1 to numbers", "", ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Adding 1 to numbers", "My won\'t you help me\r\nSharp wind confuses me so\r\nWhat number comes next?", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -66,16 +66,18 @@ namespace SpecFlowTest.RelevantFiles
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Click the good button")]
+        [NUnit.Framework.CategoryAttribute("goodButton")]
         public virtual void ClickTheGoodButton()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Click the good button", ((string[])(null)));
-#line 3
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Click the good button", new string[] {
+                        "goodButton"});
+#line 7
 this.ScenarioSetup(scenarioInfo);
-#line 4
+#line 8
  testRunner.Given("I have entered 0 into the textbox", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 5
+#line 9
  testRunner.When("I press the good button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 6
+#line 10
  testRunner.Then("the result should be 1", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -83,33 +85,37 @@ this.ScenarioSetup(scenarioInfo);
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Click the good button multiple times")]
+        [NUnit.Framework.CategoryAttribute("goodButton")]
         public virtual void ClickTheGoodButtonMultipleTimes()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Click the good button multiple times", ((string[])(null)));
-#line 8
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Click the good button multiple times", new string[] {
+                        "goodButton"});
+#line 13
 this.ScenarioSetup(scenarioInfo);
-#line 9
+#line 14
  testRunner.Given("I have entered 0 into the textbox", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 10
+#line 15
  testRunner.When("I press the good button 10 times", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 11
+#line 16
  testRunner.Then("the result should be 10", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Clicking the faulty button")]
-        public virtual void ClickingTheFaultyButton()
+        [NUnit.Framework.DescriptionAttribute("Click the faulty button")]
+        [NUnit.Framework.CategoryAttribute("faultyButton")]
+        public virtual void ClickTheFaultyButton()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Clicking the faulty button", ((string[])(null)));
-#line 13
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Click the faulty button", new string[] {
+                        "faultyButton"});
+#line 19
 this.ScenarioSetup(scenarioInfo);
-#line 14
+#line 20
  testRunner.Given("I have entered 0 into the textbox", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
-#line 15
+#line 21
  testRunner.When("I press the faulty button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
-#line 16
+#line 22
  testRunner.Then("the result should be 1", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
