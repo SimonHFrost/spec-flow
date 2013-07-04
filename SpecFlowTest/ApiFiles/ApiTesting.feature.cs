@@ -65,22 +65,22 @@ namespace SpecFlowTest.ApiFiles
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Bale Arms Customer Import")]
+        [NUnit.Framework.DescriptionAttribute("Bay Alarms Customer Import")]
         [NUnit.Framework.CategoryAttribute("scenarioTest")]
-        public virtual void BaleArmsCustomerImport()
+        public virtual void BayAlarmsCustomerImport()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Bale Arms Customer Import", new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Bay Alarms Customer Import", new string[] {
                         "scenarioTest"});
 #line 7
 this.ScenarioSetup(scenarioInfo);
 #line 8
- testRunner.Given("I am logged in as customer \'bale arms\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+ testRunner.Given("I am logged in as customer \'Bay Alarms\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 9
  testRunner.And("I have 70 of my customers ready to import", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 10
  testRunner.When("I import these customers", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 11
- testRunner.Then("I want to see them displayed in Route", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("I want to verify that they exist", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }

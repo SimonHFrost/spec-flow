@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainWindow));
             this.goodButton = new System.Windows.Forms.Button();
             this.faultyButton = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -65,7 +66,7 @@
             this.textBox1.TabIndex = 1;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // Form1
+            // MainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -73,9 +74,10 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.faultyButton);
             this.Controls.Add(this.goodButton);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximumSize = new System.Drawing.Size(260, 194);
             this.MinimumSize = new System.Drawing.Size(260, 194);
-            this.Name = "Form1";
+            this.Name = "MainWindow";
             this.Text = "Plus One";
             this.Load += new System.EventHandler(this.MainWindow_Load);
             this.ResumeLayout(false);

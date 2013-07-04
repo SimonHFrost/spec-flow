@@ -1,5 +1,4 @@
-﻿using System;
-using TechTalk.SpecFlow;
+﻿using TechTalk.SpecFlow;
 
 namespace SpecFlowTest.ApiFiles
 {
@@ -23,11 +22,11 @@ namespace SpecFlowTest.ApiFiles
         {
             // ApiImportCustomers("import", _rows);
         }
-        
-        [Then(@"I want to see them displayed in Route")]
+
+        [Then(@"I want to verify that they exist")]
         public void ThenIWantToSeeThemDisplayedInRoute()
         {
-            // GetAllCustomers(_currentLogin);
+            // List<Customer> customers = GetAllCustomers(_currentLogin);
         }
     }
 }

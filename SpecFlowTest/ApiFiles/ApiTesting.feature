@@ -4,8 +4,8 @@
 	Much like regressions
 
 @scenarioTest
-Scenario: Bale Arms Customer Import
-	Given I am logged in as customer 'bale arms'
+Scenario: Bay Alarms Customer Import
+	Given I am logged in as customer 'Bay Alarms'
 	And I have 70 of my customers ready to import
 	When I import these customers
-	Then I want to see them displayed in Route
+	Then I want to verify that they exist
