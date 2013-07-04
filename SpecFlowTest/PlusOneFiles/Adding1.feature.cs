@@ -32,7 +32,7 @@ namespace SpecFlowTest.PlusOneFiles
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Adding 1 to numbers", "My won\'t you help me\r\nSharp wind does confuse me so\r\nWhat number comes next?", ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Adding 1 to numbers", "Plea, won\'t you help me\r\nSharp wind, ambiguity \r\nI demand the next", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -65,11 +65,11 @@ namespace SpecFlowTest.PlusOneFiles
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Click the good button (Specflow)")]
+        [NUnit.Framework.DescriptionAttribute("Click the good button")]
         [NUnit.Framework.CategoryAttribute("goodButton")]
-        public virtual void ClickTheGoodButtonSpecflow()
+        public virtual void ClickTheGoodButton()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Click the good button (Specflow)", new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Click the good button", new string[] {
                         "goodButton"});
 #line 7
 this.ScenarioSetup(scenarioInfo);
@@ -84,11 +84,11 @@ this.ScenarioSetup(scenarioInfo);
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Click the good button multiple times (Specflow)")]
+        [NUnit.Framework.DescriptionAttribute("Click the good button multiple times")]
         [NUnit.Framework.CategoryAttribute("goodButton")]
-        public virtual void ClickTheGoodButtonMultipleTimesSpecflow()
+        public virtual void ClickTheGoodButtonMultipleTimes()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Click the good button multiple times (Specflow)", new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Click the good button multiple times", new string[] {
                         "goodButton"});
 #line 13
 this.ScenarioSetup(scenarioInfo);
@@ -103,11 +103,11 @@ this.ScenarioSetup(scenarioInfo);
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Click the faulty button (Specflow)")]
+        [NUnit.Framework.DescriptionAttribute("Click the faulty button")]
         [NUnit.Framework.CategoryAttribute("faultyButton")]
-        public virtual void ClickTheFaultyButtonSpecflow()
+        public virtual void ClickTheFaultyButton()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Click the faulty button (Specflow)", new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Click the faulty button", new string[] {
                         "faultyButton"});
 #line 19
 this.ScenarioSetup(scenarioInfo);
