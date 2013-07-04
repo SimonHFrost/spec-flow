@@ -9,9 +9,9 @@ namespace SpecFlowTest
         private MainWindow mainWindow = new MainWindow();
 
         [Given(@"I have entered (.*) into the textbox")]
-        public void GivenIHaveEnteredIntoTheTextbox(int p0)
+        public void GivenIHaveEnteredIntoTheTextbox(int number)
         {
-            mainWindow.textBox1.Text = p0.ToString();
+            mainWindow.textBox1.Text = number.ToString();
         }
         
         [When(@"I press the good button")]

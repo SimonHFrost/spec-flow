@@ -65,11 +65,11 @@ namespace SpecFlowTest.PlusOneFiles
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Click the good button")]
+        [NUnit.Framework.DescriptionAttribute("Click the good button (Specflow)")]
         [NUnit.Framework.CategoryAttribute("goodButton")]
-        public virtual void ClickTheGoodButton()
+        public virtual void ClickTheGoodButtonSpecflow()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Click the good button", new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Click the good button (Specflow)", new string[] {
                         "goodButton"});
 #line 7
 this.ScenarioSetup(scenarioInfo);
@@ -84,11 +84,11 @@ this.ScenarioSetup(scenarioInfo);
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Click the good button multiple times")]
+        [NUnit.Framework.DescriptionAttribute("Click the good button multiple times (Specflow)")]
         [NUnit.Framework.CategoryAttribute("goodButton")]
-        public virtual void ClickTheGoodButtonMultipleTimes()
+        public virtual void ClickTheGoodButtonMultipleTimesSpecflow()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Click the good button multiple times", new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Click the good button multiple times (Specflow)", new string[] {
                         "goodButton"});
 #line 13
 this.ScenarioSetup(scenarioInfo);
@@ -103,11 +103,11 @@ this.ScenarioSetup(scenarioInfo);
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Click the faulty button")]
+        [NUnit.Framework.DescriptionAttribute("Click the faulty button (Specflow)")]
         [NUnit.Framework.CategoryAttribute("faultyButton")]
-        public virtual void ClickTheFaultyButton()
+        public virtual void ClickTheFaultyButtonSpecflow()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Click the faulty button", new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Click the faulty button (Specflow)", new string[] {
                         "faultyButton"});
 #line 19
 this.ScenarioSetup(scenarioInfo);
